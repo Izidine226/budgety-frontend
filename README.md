@@ -1,16 +1,47 @@
-# React + Vite
+# Budgety - Application de Gestion de Budget 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**[Voir l'application en ligne](https://budgety-backend-bwnc-git-main-izidine226s-projects.vercel.app/)**
 
-Currently, two official plugins are available:
+Budgety est une application web full-stack (MERN) conçue pour aider les étudiants à suivre leurs revenus et leurs dépenses de manière simple et intuitive. Ce projet m'a permis de mettre en pratique l'ensemble du cycle de développement d'une application moderne, de la conception de l'API à son déploiement.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+### Aperçu de l'application
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
+<img width="657" height="882" alt="Capture d’écran 2025-10-17 151215" src="https://github.com/user-attachments/assets/117ee124-dc6e-4db4-80af-caecf70214fc" />
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+---
+
+### Fonctionnalités
+
+* **Authentification sécurisée :** Inscription et connexion des utilisateurs avec des tokens JWT.
+* **Gestion des Transactions (CRUD) :**
+    * **Ajouter** des revenus ou des dépenses.
+    * **Afficher** la liste de toutes les transactions.
+    * **Supprimer** une transaction.
+* **Tableau de Bord Dynamique :** Calcul et affichage en temps réel du solde, des revenus et des dépenses totaux.
+* **Routes Protégées :** Seuls les utilisateurs connectés peuvent accéder à leur tableau de bord et à leurs données.
+
+
+---
+
+### Stack Technique
+
+* **Front-End :** React.js, Vite, React Router, Axios
+* **Back-End :** Node.js, Express.js
+* **Base de Données :** MongoDB (avec Mongoose)
+* **Authentification :** JSON Web Tokens (JWT), bcrypt.js
+* **Déploiement :**
+    * Front-end sur **Vercel**
+    * Back-end sur **Railway**
+
+---
+
+### Pour lancer le projet en local
+
+1.  Clonez le dépôt : `git clone https://github.com/VOTRE_PSEUDO/budgety-frontend.git`
+2.  Installez les dépendances : `npm install`
+3.  Lancez le serveur : `npm run dev`
+    *(N'oubliez pas de lancer le serveur back-end en parallèle.)*
