@@ -15,7 +15,7 @@ function LoginPage() {
     try {
       const loginData = { email, password };
       const response = await axios.post(
-        'http://localhost:5000/api/users/login',
+        'https://insightful-clarity-production.up.railway.app/api/users/login',
         loginData
       );
      login(response.data.token);
