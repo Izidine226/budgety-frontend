@@ -16,7 +16,7 @@ function DashboardPage() {
       }
       try {
         const config = { headers: { 'x-auth-token': token } };
-        const response = await axios.get('http://localhost:5000/api/transactions', config);
+        const response = await axios.get('https://insightful-clarity-production.up.railway.app/api/transactions', config);
         setTransactions(response.data);
       } catch (error) {
         console.error('Erreur lors de la récupération des transactions', error);
@@ -38,7 +38,7 @@ function DashboardPage() {
     }
     try {
       const config = { headers: { 'x-auth-token': token } };
-      await axios.delete(`http://localhost:5000/api/transactions/${id}`, config);
+      await axios.delete(`https://insightful-clarity-production.up.railway.app/api/transactions/${id}`, config);
       setTransactions(transactions.filter((transaction) => transaction._id !== id));
     } catch (error) {
       console.error("Erreur lors de la suppression de la transaction", error);

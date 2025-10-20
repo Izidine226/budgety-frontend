@@ -30,7 +30,7 @@ const TransactionForm = ({ onTransactionAdded }) => {
       };
 
       const response = await axios.post(
-        'http://localhost:5000/api/transactions',
+        'https://insightful-clarity-production.up.railway.app/api/transactions',
         newTransaction,
         config
       );

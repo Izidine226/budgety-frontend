@@ -18,7 +18,7 @@ function RegisterPage() {
       const newUser = { email, password };
 
       const response = await axios.post(
-        'http://localhost:5000/api/users/register',
+        'https://insightful-clarity-production.up.railway.app/api/users/register',
         newUser
       );
 
